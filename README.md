@@ -1,34 +1,55 @@
-🚀 Projeto Python: Fundamentos da Programação
-Este é um projeto desenvolvido para praticar e demonstrar o uso das estruturas fundamentais da linguagem Python. O foco aqui foi aplicar lógica de programação utilizando sintaxes limpas e eficientes. 
-🛠️ O que foi utilizado?
-Neste projeto, você encontrará exemplos práticos de:
-input(): Interação com o usuário para coleta de dados.
-int() & Tipagem: Conversão de dados para números inteiros e manipulação de tipos.
-if, elif, else: Estruturas condicionais para tomada de decisão no código.
-match case: Introduzido no Python 3.10, utilizado para seleções mais elegantes (similar ao switch de outras linguagens).
-def (Funções): Modularização do código para torná-lo reutilizável e organizado. 
-📂 Estrutura do Código
-O projeto está dividido em blocos que executam as seguintes lógicas:
-Entrada de Dados: O programa solicita informações ao usuário.
-Processamento: Os dados são validados e processados através de funções.
-Saída: O resultado é exibido no console com base nas condições verificadas. 
-🚀 Como executar o projeto
-Certifique-se de ter o Python 3.10 ou superior instalado (necessário para o match case).
-Clone este repositório:
-bash
-git clone https://github.com
-Use o código com cuidado.
-Navegue até a pasta e execute o arquivo principal:
-bash
+🐍 Projeto Python Básico
+
+Este projeto contém exemplos simples em Python utilizando estruturas fundamentais da linguagem, como:
+
+Entrada de dados com input()
+Conversão de tipos com int()
+Estruturas condicionais (if, else, elif)
+Uso de match case
+Criação e uso de funções
+📂 Estrutura do Projeto
+📁 projeto-python/
+ ├── main.py
+ ├── funcoes.py
+ └── README.md
+🚀 Funcionalidades
+🔹 Entrada de dados
+
+O programa utiliza input() para receber informações do usuário.
+
+nome = input("Digite seu nome: ")
+idade = int(input("Digite sua idade: "))
+🔹 Condicionais (if/else)
+if idade >= 18:
+    print("Você é maior de idade.")
+else:
+    print("Você é menor de idade.")
+🔹 Estrutura match-case
+opcao = int(input("Escolha uma opção: "))
+
+match opcao:
+    case 1:
+        print("Opção 1 escolhida")
+    case 2:
+        print("Opção 2 escolhida")
+    case _:
+        print("Opção inválida")
+🔹 Funções
+def saudacao(nome):
+    return f"Olá, {nome}!"
+
+print(saudacao("Maria"))
+▶️ Como executar
+Instale o Python (versão 3.10 ou superior recomendada)
+Clone ou baixe o projeto
+Execute o arquivo principal:
 python main.py
- 
-Exemplo de trecho implementado:
-python
-def saudar_usuario(opcao):
-    match opcao:
-        case 1:
-            return "Olá! Bem-vindo ao sistema."
-        case 2:
-            return "Até logo! Saindo..."
-        case _:
-            return "Opção inválida."
+📚 Objetivo
+
+Este projeto foi criado para praticar conceitos básicos de programação em Python, sendo ideal para iniciantes.
+
+🛠️ Tecnologias utilizadas
+Python 3
+✍️ Autor
+
+Guilherme Moreli
